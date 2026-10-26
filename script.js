@@ -19,7 +19,7 @@
 
 function greet(name) {
   // Write your code here
-
+  return "Hello, " + name + "!";
 }
 
 
@@ -35,13 +35,11 @@ function greet(name) {
 // STEP 3: Return the new count value.
 //         First click → returns 1, second → returns 2, etc.
 
-
-
+let count = 0;
 function myFunc() {
   // Write your code here
-
+  return ++count;
 }
-
 
 // --- getRandomNum(max) ---
 // This function returns a random integer between 1 and max.
@@ -57,9 +55,9 @@ function myFunc() {
 
 function getRandomNum(max) {
   // Write your code here
-
+  if (isNaN(max) || max < 1) return 0;
+  return Math.floor(Math.random() * max) + 1;
 }
-
 
 // --- myAdder(x, y) ---
 // This function adds two numbers and returns the result.
@@ -70,9 +68,8 @@ function getRandomNum(max) {
 
 function myAdder(x, y) {
   // Write your code here
-
+  return parseFloat(x) + parseFloat(y);
 }
-
 
 // --- distance(x1, y1, x2, y2) ---
 // This function calculates the Euclidean distance between
@@ -88,7 +85,7 @@ function myAdder(x, y) {
 
 function distance(x1, y1, x2, y2) {
   // Write your code here
-
+  return Math.sqrt((x2 - x1)**2 + (y2 - y1)**2).toFixed(2);
 }
 
 
@@ -103,7 +100,7 @@ function distance(x1, y1, x2, y2) {
 
 function tipCalc(bill, tipPercent) {
   // Write your code here
-
+  return (bill * (1 + tipPercent / 100)).toFixed(2);
 }
 
 
